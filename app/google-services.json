@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "514047278198",
+    "firebase_url": "https://whatsappmessage-150f5.firebaseio.com",
+    "project_id": "whatsappmessage-150f5",
+    "storage_bucket": "whatsappmessage-150f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514047278198:android:4257902617b6da4a94f357",
+        "android_client_info": {
+          "package_name": "com.hazyaz.whatsRemoved"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514047278198-7iskocs2uk15aq6pmj47kj7q7j354sm5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hazyaz.whatsRemoved",
+            "certificate_hash": "b824018457bd82d501a221c0dc1f7b918ac50876"
+          }
+        },
+        {
+          "client_id": "514047278198-pvjuo8g530hdrno1ad9uqsj6497ugam4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2T9RV7Kgjw8J6V6LKEMQ04xoqu7dJFbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514047278198-pvjuo8g530hdrno1ad9uqsj6497ugam4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

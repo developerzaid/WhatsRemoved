@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collectorLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/voice_note_bg_new"
+    android:elevation="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/paddedLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgPlay"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/play"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/imgPause"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/pause"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/containerLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/seekBar"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nowPlayingText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/roboto_condensed_bold"
+                    android:gravity="center_vertical"
+                    android:text="@string/your_media_is_now_playing"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txtTime"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00 / 00:00:00"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:maxHeight="4dp"
+                android:progressDrawable="@drawable/progress"
+                android:thumb="@drawable/thumb" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

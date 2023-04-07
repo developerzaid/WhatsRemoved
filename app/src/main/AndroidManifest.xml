@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hazyaz.whatsRemoved">
+
+    <!-- Required only if your app needs to access images or photos
+     that other apps created. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Required only if your app needs to access videos
+         that other apps created. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- Required only if your app needs to access audio files
+         that other apps created. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-permission android:name="android.permission.READ_VOICEMAIL" />
+
+    <!-- If your app doesn't need to access media files that other apps created,
+         set the "maxSdkVersion" attribute to "28" instead. -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+
+        <activity android:name=".permission.PermissionKotlin" />
+
+        <activity android:name=".Fragments.DataViewer" />
+
+        <activity
+            android:name=".Utils.MessageList"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Notification.ActiveService"
+            android:enabled="true"
+            android:process=":observer"
+            android:exported="true"  />
+
+        <service
+            android:name=".Notification.NotificationListener"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".Notification.BroadCastReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped"
+            android:permission="android.permission.BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="RestartService" />
+            </intent-filter>
+        </receiver>
+
+        <!-- googlee ads servie -->
+
+
+<!--        <service-->
+<!--            android:name=".service.CounterService"-->
+<!--            android:clearTaskOnLaunch="true"-->
+<!--            android:enabled="true"-->
+<!--            android:excludeFromRecents="true"-->
+<!--            android:exported="false"-->
+<!--            android:foregroundServiceType="location"-->
+<!--            android:launchMode="singleTop" />-->
+
+<!--        <receiver-->
+<!--            android:name=".service.RestarterBroadcastReceiver"-->
+<!--            android:enabled="true"-->
+<!--            android:exported="true"-->
+<!--            android:label="StartMyServiceAtBootReceiver">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.BOOT_COMPLETED" />-->
+<!--                <action android:name="android.intent.action.QUICKBOOT_POWERON" />-->
+<!--                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--            </intent-filter>-->
+<!--        </receiver>-->
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2675887677224394~3984057092" />
+
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="ca-app-pub-3940256099942544~3347511713" />-->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+    </application>
+
+</manifest>

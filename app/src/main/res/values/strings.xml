@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Whats Removed</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="username_fr">It seems no one has deleted their sent messages yet.</string>
+    <string name="audio_fr">Looks like nobody deleted their sent audio yet\.\.\. if they do i can sniff it.</string>
+    <string name="story_fr">Looks like nobody has any story yet\.\.\. if they do i can sniff it.</string>
+    <string name="video_fr">Looks like nobody deleted their sent video yet\.\.\. if they do i can sniff it.</string>
+    <string name="voice_notes_fr">Looks like nobody deleted their sent voice note yet\.\.\. if they do i can sniff it.</string>
+    <string name="image_fr">Looks like nobody deleted their sent image yet\.\.\. if they do i can sniff it.</string>
+
+
+    <string name="perm_not">In Order to Work Properly Please Grant Notification Access to WhatsRemoved</string>
+    <string name="perm_stor">In Order to Work Properly Please Grant Storage Access to WhatsRemoved</string>
+    <string name="status_folder_permission">Status Folder Permission</string>
+    <string name="whatsapp_voice_notes_folder_permission">Whatsapp Voice Notes Folder</string>
+    <string name="grant">Grant</string>
+    <string name="whatsapp_audio_private_folder">Whatsapp Audio/Private Folder</string>
+    <string name="whatsapp_video_private_folder">Whatsapp Video/Private Folder</string>
+    <string name="whatsapp_images_private_folder">Whatsapp Images/Private Folder</string>
+    <string name="grant_permissions_to">Grant Permissions to -</string>
+    <string name="are_you_sure_you_want_to_delete_n_your_chats">Are you sure you want to delete all \nyour chats</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+
+
+    <!--New Strings-->
+
+    <string name="title">Umm. I can’t find any messages</string>
+    <string name="grant_notification_access">Grant Notification Access</string>
+    <string name="hello">Hello.. I am Kai</string>
+    <string name="your_media_is_now_playing">Your Media is now Playing</string>
+
+</resources>

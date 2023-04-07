@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cons1"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_above="@id/line1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/xUserImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textColor="#000000"
+            app:srcCompat="@drawable/userprofile" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/xUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:paddingTop="3sp"
+                android:singleLine="true"
+                android:text="Zaid Ali Khan Ali"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto"
+                android:maxLines="1"
+                android:text="Hey there i am using this app for getting deleted chats"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line1"
+        android:layout_marginHorizontal="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#B2AAAA"/>
+
+</RelativeLayout>

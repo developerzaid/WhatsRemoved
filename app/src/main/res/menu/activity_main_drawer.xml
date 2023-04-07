@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="General">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/more_apps"
+                    android:icon="@drawable/ic_apps_black_24dp"
+                    android:title="More Apps" >
+                </item>
+
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Contents">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/story_saver"
+                    android:icon="@drawable/ic_file_download_black_24dp"
+                    android:title="Story Saver" />
+                <item
+                    android:id="@+id/voice_notes"
+                    android:icon="@drawable/voice_notes"
+                    android:title="Deleted Voice Notes" />
+
+                <item
+                    android:id="@+id/audio"
+                    android:icon="@drawable/audio"
+                    android:title="Deleted Audio" />
+                <item
+                    android:id="@+id/videos"
+                    android:icon="@drawable/video"
+                    android:title="Deleted Videos" />
+                <item
+                    android:id="@+id/images"
+                    android:icon="@drawable/image"
+                    android:title="Deleted Images" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/Share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="Share" />
+            <item
+                android:id="@+id/contact_us"
+                android:icon="@drawable/ic_baseline_mail_outline_24"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/privacy_policy"
+                android:icon="@drawable/privacy_policy"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+</menu>
